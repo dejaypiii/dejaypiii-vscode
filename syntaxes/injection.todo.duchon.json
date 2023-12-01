@@ -1,0 +1,15 @@
+{
+  "scopeName": "todo-duchon-comment.injection",
+  "injectionSelector": "L:comment",
+  "patterns": [
+    {
+      "include": "#todo-duchon-keyword"
+    }
+  ],
+  "repository": {
+    "todo-duchon-keyword": {
+      "match": "duchon",
+      "name": "keyword.dejaypiii.todo.duchon"
+    }
+  }
+}

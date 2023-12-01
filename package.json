@@ -1,6 +1,6 @@
 {
   "name": "dejaypiii",
-  "displayName": "Dejaypiii",
+  "displayName": "dejaypiii",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -12,10 +12,24 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
+    "grammars": [
       {
-        "command": "dejaypiii.helloWorld",
-        "title": "Hello World"
+        "path": "./syntaxes/injection.todo.duchon.json",
+        "scopeName": "todo-duchon-comment.injection",
+        "injectTo": [
+          "source.js",
+          "source.ts",
+          "source.vue"
+        ]
+      },
+      {
+        "path": "./syntaxes/injection.todo.json",
+        "scopeName": "todo-comment.injection",
+        "injectTo": [
+          "source.js",
+          "source.ts",
+          "source.vue"
+        ]
       }
     ]
   },
